@@ -10,10 +10,9 @@ class Team():
     @property
     def players(self):
         players = []
-        headers = {"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"}
         url  = self.url
 
-        html = requests.get(url, headers=headers)
+        html = requests.get(url, headers=config["headers"])
         soup = bs(html.content, features=("html.parser"))
         soup = soup.select('.responsive-table > .grid-view > .items > tbody')[0]
 
