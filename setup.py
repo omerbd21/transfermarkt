@@ -1,0 +1,31 @@
+from distutils.core import setup
+setup(
+  name = 'transfermarkt',         
+  packages = ['transfermarkt', 'settings'],   
+  version = '0.1.2',     
+  license='MIT',        
+  description = 'A package to query transfermarkt, mainly aimed at statistics',   
+  author = 'Omer Ben David',                   
+  author_email = 'omerbendavid21@gmail.com',      
+  url = 'https://github.com/omerbd21/transfermarkt',   
+  download_url = 'https://github.com/omerbd21/transfermarkt/archive/refs/tags/test.tar.gz',    
+  keywords = ['transfermarkt', 'ML', 'Statistics', 'BeautifulSoup', 'AI', 'Football', 'Soccer'], 
+  install_requires=[           
+          'beautifulsoup4',
+          'bs4',
+          'certifi',
+          'charset-normalizer',
+          'idna',
+          'requests',
+          'soupsieve',
+          'urllib3',
+      ],
+  classifiers=[
+    'Development Status :: 3 - Alpha',      
+    'Intended Audience :: Developers',      
+    'Topic :: Software Development :: Build Tools',
+    'License :: OSI Approved :: MIT License',   
+    'Programming Language :: Python :: 3',      
+    'Programming Language :: Python :: 3.9',
+  ],
+)

@@ -1,9 +1,7 @@
-from dataclasses import fields
 import requests
 import settings
 from bs4 import BeautifulSoup as bs
 import csv
-import pandas as pd
 
 class Player():
     def __init__(self):
